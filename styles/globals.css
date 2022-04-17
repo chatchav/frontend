@@ -1,9 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-image: url(../public/img/bg-web.png);
+  background-repeat: no-repeat;
+    /* background-size: cover; */
+  /* background-size: 100% 100%; */
+  background-position: bottom center;
 }
 
 a {
@@ -13,4 +22,62 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Kanit', sans-serif !important;
+}
+
+.custom-main-menu{
+  background-color: #313b45;
+  color:#fff;  
+}
+
+.carousel .control-dots .dot {
+  background: #313b45 !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 0px solid #fe4575 !important;
+  margin: 0 0 0 !important;
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  width: 100%;
+  /* border-radius: 5px 5px 0 0; */
+}
+
+.react-tabs__tab--selected {
+  background: #fe4575 !important;
+  border-color: #fe4575 !important;
+  color: white !important;
+}
+
+.react-tabs__tab {
+  /* border: 1px solid #efefef !important; */
+  background-color: #efefef;
+  padding: 1rem 2rem 1rem 2rem !important;
+  text-align: center;
+  /* border-left: 1.5px solid #d9d9d9 !important;
+  border-right: 1.5px solid #d9d9d9 !important; */
+  border-radius: 5px 5px 0 0;
+}
+
+.react-tabs__tab:focus:after{
+  background-color: #fff0 !important;
+}
+
+.react-tabs__tab-panel--selected {
+  border: 5px solid #fe4575 !important;
+  border-top: 20px solid #fe4575!important;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+}
+
+.ranking {
+  background-color: #37008f;
+}
+.ranking .carousel .control-dots .dot {
+  background: #24aed3 !important;
+  width: 10px !important;
+  height: 10px !important;
 }
